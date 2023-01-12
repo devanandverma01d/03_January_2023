@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loop Statement- For Loop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /*we can write css here*/
+    </style>
+    <script>
+        /*we can write js code before closing of head tag*/
+    </script>
+</head>
+
+<body>
+    <ul class="myul">
+
+    </ul>
+
+
+    <script>
+
+        let ul = document.querySelector('ul.myul');
+        //console.log(ul);
+        /*we can write js code before closing of body tag*/
+        /*
+        Syntax of for loop-
+            for(expression1;expression2;expression3){
+                block of code to be executed
+            }
+
+            for (initialisation;codition;updation){
+                block of code
+            }
+        */
+
+        //let's define for loop
+
+        var name = prompt("Please enter your name");
+        var n = parseInt(prompt('How many times do you want to print'));
+        alert(typeof n);
+        for (i = 0; i < n; i++) {
+            console.log(`Hello, dear ${name} how are you`);
+            //document.write('<li>' + `Hello, dear ${name} how are you` + '</li>')
+            ul.innerHTML += `<li>Hello, dear ${name} how are you</li>`
+        }
+    </script>
+</body>
+
+</html>

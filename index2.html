@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript loop statement- for loop</title>
+    <script>
+        /*we can write js code before closing of head tag*/
+    </script>
+</head>
+
+<body>
+    <form action="" onsubmit="">
+        <input class="name" type="text" placeholder="Please enter your name"><br><br>
+        <input class="number" type="text" placeholder="Please enter no."><br><br>
+        <input class="button" type="button" value="Submit" onclick="display()">
+    </form>
+    <ul class="demo1">
+
+    </ul>
+
+    <script>
+        let n = document.querySelector('input.name');
+        let no = document.querySelector('input.number');
+
+        //alert(typeof pno);
+
+        let ul = document.querySelector('ul.demo1');
+        // defining a functio with the help of Fat Arrow notation
+        let display = () => {
+            //alert("okokoko..");
+            let pno = parseInt(no.value);
+            console.log(n.value);
+            console.log(no.value);
+            for (let i = 1; i <= pno; i++) {
+                ul.innerHTML += `<li>Hello, dear ${n.value} How are you</li>`;
+            }
+        }
+    </script>
+</body>
+
+</html>
